@@ -127,9 +127,9 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
-        Congratulations
+        연우야 이것봐!
         <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
+        <span style={headingAccentStyles}>— 나 웹사이트 배포했어! 신기하지? 🎉🎉🎉</span>
       </h1>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
