@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7261b3e9-ba99-439d-8f4a-f787e44b263b/deploy-status)](https://app.netlify.com/sites/regal-cajeta-045340/deploys)
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
