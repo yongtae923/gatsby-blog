@@ -1,5 +1,5 @@
 import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
+import { Link, HeadFC, PageProps } from "gatsby"
 
 const pageStyles = {
   color: "#232129",
@@ -144,6 +144,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <br />
         <span style={headingAccentStyles}>— From Brainwaves To Innovation</span>
       </h1>
+      <Link to="/about">Go to About</Link>.
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
         update in real-time. 😎
