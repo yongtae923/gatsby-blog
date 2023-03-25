@@ -1,49 +1,23 @@
 import * as React from "react"
-import { Link, HeadFC, PageProps } from "gatsby"
+import { HeadFC, Link } from "gatsby"
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-const NotFoundPage: React.FC<PageProps> = () => {
+const NotFoundPage: React.FC = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
+    <div className="min-h-screen flex flex-col justify-center items-center">
+      <h1 className="text-4xl font-bold text-gray-900 mb-4">404: Page not found</h1>
+      <p className="text-gray-600 mb-8">
+        We're sorry, the page you requested could not be found.
       </p>
-    </main>
+      <Link
+        to="/"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Go back to homepage
+      </Link>
+    </div>
   )
 }
 
 export default NotFoundPage
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head: HeadFC = () => <title>About Page</title>
