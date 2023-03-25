@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from 'gatsby-plugin-image'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -11,8 +12,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-10 py-10 flex items-center justify-between">
           <div className="flex items-center">
-            <Link to="/" className="text-lg font-semibold text-gray-900">
-              My Logo
+            <Link to="/">
+              <StaticImage alt="Yongtae Kim" src="../images/icon.png"/>
             </Link>
           </div>
           <div className="flex items-center space-x-4">
