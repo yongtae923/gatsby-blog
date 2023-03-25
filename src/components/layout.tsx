@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <header className="bg-white border-b border-gray-200">
-        <div className="container mx-auto px-10 py-10 flex items-center justify-between">
+        <div className="container mx-auto px-10 py-5 flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/">
               <StaticImage alt="Yongtae Kim" src="../images/yongtae-logo.jpg" layout="fixed" width={50} height={50}/>
@@ -33,10 +33,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
       </header>
       <main className="flex-grow">{children}</main>
-      <footer className="bg-gray-100 border-t border-gray-200">
-        <div className="container mx-auto px-4 py-6">
-          <p className="text-sm text-gray-600">
-            Your information goes here
+      <footer className="bg-gray-50 text-gray-400 py-4">
+        <div className="container mx-auto px-10">
+          <p className="text-center text-sm">
+            © 2023 Yongtae Kim. All rights reserved.
           </p>
         </div>
       </footer>
