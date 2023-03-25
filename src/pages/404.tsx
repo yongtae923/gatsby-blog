@@ -5,7 +5,7 @@ const NotFoundPage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <h1 className="text-4xl font-bold text-gray-900 mb-4">404: Page not found</h1>
-      <p className="text-gray-600 mb-8">
+      <p className="text-gray-600 mb-8 px-5">
         We're sorry, the page you requested could not be found.
       </p>
       <Link
