@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { container } from './layout.module.css'
 
 type LayoutProps = {
   pageTitle: string,
@@ -9,7 +8,7 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
   return (
-    <div className={container}>
+    <div>
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
