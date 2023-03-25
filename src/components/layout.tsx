@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container mx-auto px-10 py-10 flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/">
-              <StaticImage alt="Yongtae Kim" src="../images/icon.png"/>
+              <StaticImage alt="Yongtae Kim" src="../images/yongtae-logo.jpg" layout="fixed" width={50} height={50}/>
             </Link>
           </div>
           <div className="flex items-center space-x-4">
