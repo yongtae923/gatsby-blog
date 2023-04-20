@@ -98,9 +98,9 @@ const IndexPage: React.FC = () => {
       </header>
       <main>
         <div className="relative flex items-center w-full h-96">
-          <div className="px-4">
-            From brainwaves<br/>
-            To innovation
+          <div className="relative inline-block px-8 py-4 font-serif text-4xl leading-normal text-black ">
+            From Brainwaves<br/>
+            To Innovation
           </div>
         </div>
         <div className="relative flex items-center w-full h-screen min-h-600 ">
