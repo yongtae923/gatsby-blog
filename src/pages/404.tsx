@@ -3,16 +3,16 @@ import { HeadFC, Link } from "gatsby"
 
 const NotFoundPage: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
-      <h1 className="text-4xl font-bold text-gray-900 mb-4">404: Page not found</h1>
-      <p className="text-gray-600 mb-8 px-5">
-        We're sorry, the page you requested could not be found.
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <h1 className="mb-4 text-4xl font-bold text-gray-900">404: Page not found</h1>
+      <p className="px-5 mb-8 text-gray-600">
+        이 페이지는 준비 중입니다.
       </p>
       <Link
         to="/"
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
       >
-        Go back to homepage
+        홈페이지로 돌아가기
       </Link>
     </div>
   )
