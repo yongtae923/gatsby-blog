@@ -97,12 +97,18 @@ const IndexPage: React.FC = () => {
         </div>
       </header>
       <main>
-        <div className="relative flex items-center w-full h-96">
-          <div className="relative inline-block px-8 py-4 font-serif text-4xl leading-normal text-black ">
+        <div className="relative flex items-center w-full flex-c h-96">
+          <h1 className="relative inline-block p-8 font-serif text-4xl leading-normal text-black ">
             From Brainwaves<br/>
             To Innovation
-          </div>
+          </h1>
         </div>
+        <p>
+          <b>김용태</b><br/>
+          개발하는 뇌공학도<br/>
+          에이블리코퍼레이션 소프트웨어 엔지니어<br/>
+          카이스트 바이오및뇌공학과 학부과정 재학<br/>
+        </p>
         <div className="relative flex items-center w-full h-screen min-h-600 ">
           <div className="px-4">
             이것은 두번째 섹션
