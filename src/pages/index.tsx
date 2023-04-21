@@ -107,20 +107,22 @@ const IndexPage: React.FC = () => {
               <b>김용태</b><br/>
               개발하는 뇌공학도<br/>
               <a href="https://ably.team/" className="underline">에이블리코퍼레이션</a> 소프트웨어 엔지니어 <small>2022 ~</small><br/>
-              <a href="https://bioeng.kaist.ac.kr/" className="underline">카이스트 바이오및뇌공학과</a> 학부과정 재학 <small>2019 ~</small><br/>
+              <a href="https://bioeng.kaist.ac.kr/" className="underline">카이스트 바이오및뇌공학과</a> 학부과정 재학 <small>2019 ~</small>
             </p>
           </div>
         </div>
-        <div className="relative flex items-center w-full h-screen min-h-600 ">
-          <div className="px-4">
-            이 페이지는 준비 중입니다.
-          </div>
-        </div>
       </main>
+      <footer className="container bottom-0 left-0 w-full bg-slate-100">
+        <p className="p-8 mt-12 text-xs font-medium leading-normal uppercase text-slate-600">
+          Copyright © 2023<br/>
+          <a href="/">Yongtae Kim.</a><br/>
+          All rights reserved.
+        </p>
+      </footer>
     </div>
   )
 }
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Index Page</title>
+export const Head: HeadFC = () => <title>용태</title>
