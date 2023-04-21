@@ -1,4 +1,4 @@
-import { HeadFC } from "gatsby"
+import { HeadFC, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
 
@@ -32,12 +32,12 @@ const IndexPage: React.FC = () => {
             </button>
           </div>
         </div>
-        <a className="flex flex-row items-center justify-center w-2/3 mx-auto my-5" href="/" aria-label="Yongtae.Kim">
+        <Link to="/" className="flex flex-row items-center justify-center w-2/3 mx-auto my-5" aria-label="Yongtae.Kim">
           <StaticImage src="../images/yongtae-logo.png" alt="Yongtae Logo" className="w-12 mr-1"/>
           <h1 className="mr-4 font-sans text-2xl font-medium leading-relaxed text-center text-black break-words">
             Yongtae.Kim
           </h1>
-        </a>
+        </Link>
         <div className="flex flex-row items-center justify-center mb-4">
           <button type="button" aria-label="Follow" className="flex flex-row items-center px-4 py-2 text-xs font-medium text-center text-gray-800 transition-colors duration-150 ease-in-out bg-white border border-black border-opacity-100 rounded-full">
             <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -115,7 +115,7 @@ const IndexPage: React.FC = () => {
       <footer className="container bottom-0 left-0 w-full bg-slate-100">
         <p className="p-8 mt-12 text-xs font-medium leading-normal uppercase text-slate-600">
           Copyright © 2023<br/>
-          <a href="/">Yongtae Kim.</a><br/>
+          <Link to="/">Yongtae Kim.</Link><br/>
           All rights reserved.
         </p>
       </footer>
