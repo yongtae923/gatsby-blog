@@ -112,8 +112,8 @@ const IndexPage: React.FC = () => {
           </div>
         </div>
       </main>
-      <footer className="absolute bottom-0 left-0 block w-full bg-slate-100">
-        <p className="p-8 text-xs font-medium leading-normal uppercase text-slate-600">
+      <footer className="container bottom-0 left-0 w-full bg-slate-100">
+        <p className="p-8 mt-12 text-xs font-medium leading-normal uppercase text-slate-600">
           Copyright © 2023<br/>
           <a href="/">Yongtae Kim.</a><br/>
           All rights reserved.
