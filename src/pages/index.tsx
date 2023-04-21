@@ -99,7 +99,7 @@ const IndexPage: React.FC = () => {
       <main>
         <div className="relative flex items-center w-full h-96">
           <div>
-            <h1 className="relative inline-block p-8 font-serif text-4xl font-medium leading-normal text-black ">
+            <h1 className="relative inline-block p-8 font-serif text-4xl font-medium leading-normal tracking-wide text-black ">
               From Brainwaves<br/>
               To Innovation
             </h1>
