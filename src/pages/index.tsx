@@ -113,7 +113,7 @@ const IndexPage: React.FC = () => {
         </div>
         <div className="relative flex items-center w-full h-screen min-h-600 ">
           <div className="px-4">
-            이것은 두번째 섹션
+            이 페이지는 준비 중입니다.
           </div>
         </div>
       </main>
