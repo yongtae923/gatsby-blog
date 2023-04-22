@@ -100,8 +100,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </a>
         </div>
       </header>
-      <main>
-        {children}
+      <main className="relative flex items-center w-full p-8 mt-12 sm:justify-center min-h-96">
+        <div className="flex flex-col items-start">
+          {children}
+        </div>
       </main>
       <footer className="container bottom-0 left-0 w-full bg-slate-100">
         <p className="p-8 mt-12 text-xs font-medium leading-normal uppercase text-slate-600">
