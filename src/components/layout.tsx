@@ -124,14 +124,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {isModalOpen &&
         <div>
           <div onClick={toggleModal} className="fixed top-0 left-0 z-10 w-screen h-screen bg-black opacity-50" />
-          <div className="fixed top-0 left-0 z-20 h-screen bg-white w-80" >
-            <div className="relative flex flex-row items-center justify-between px-5 py-10">
+          <div className="fixed top-0 left-0 z-20 h-screen px-5 py-10 bg-slate-50 w-80">
+            <div className="relative flex flex-row items-center justify-between mb-16">
               <Link to="/" onClick={toggleModal} className="flex flex-row items-center pl-2" aria-label="Yongtae.Kim">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className="mr-3 h-7 w-7" viewBox="0 0 1200 1200" fill="none">
                   <g><path fill="#5E3FAE" d="M 1.5,2.5 C 267.999,1.50021 534.666,1.16688 801.5,1.5C 668.549,135.284 535.049,268.618 401,401.5C 268.005,268.338 134.838,135.338 1.5,2.5 Z"/></g>
                   <g><path fill="#6BB290" d="M 801.5,1.5 C 934.833,1.5 1068.17,1.5 1201.5,1.5C 1201.5,401.5 1201.5,801.5 1201.5,1201.5C 801.5,1201.5 401.5,1201.5 1.5,1201.5C 1.5,801.833 1.5,402.167 1.5,2.5C 134.838,135.338 268.005,268.338 401,401.5C 535.049,268.618 668.549,135.284 801.5,1.5 Z"/></g>
                 </svg>
-                <h1 className="font-sans text-xl leading-relaxed text-center text-black break-words ">
+                <h1 className="font-sans text-xl font-medium leading-relaxed text-center text-black break-words ">
                   Yongtae.Kim
                 </h1>
               </Link>
@@ -141,6 +141,25 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </svg>
               </button>
             </div>
+            <p>메뉴</p>
+            <ul>
+              <li>소개</li>
+              <li>이력</li>
+              <li>블로그</li>
+            </ul>
+            <p>연락처</p>
+            <ul className="grid grid-cols-5 gap-4">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+            </ul>
           </div>
         </div>
       }
