@@ -140,7 +140,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <ul className="p-4 text-lg font-medium leading-relaxed break-words">
                 <li>🏠 홈</li>
               </ul>
-              <ul className="grid grid-cols-5 gap-4 text-center mt-96 top-1/2">
+              <ul className="absolute grid grid-cols-5 gap-4 text-center left-7 top-2/3">
                 <li>
                   <a href="mailto:yongtae923@gmail.com" target='_blank' aria-label="Email me" className="flex flex-row items-center justify-center p-2 transition-colors duration-150 ease-in-out rounded-full ">
                     <svg className="w-6 h-6 fill-gray-600" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
