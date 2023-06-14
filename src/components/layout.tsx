@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </svg>
             </button>
           </div>
-          <div className="flex flex-row items-center py-1">
+          <div className="flex-row items-center hidden py-1"> 기능이 구현되면 hidden을 flex로 되돌리기
             <button type="button" aria-label="Search" className="relative block p-2 mr-2 transition duration-200 ease-in-out rounded-full hover:bg-gray-200 focus:outline-none">
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="M21 21L15.8091 15.8091M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
