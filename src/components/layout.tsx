@@ -139,7 +139,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <h1 className="py-2 text-xl font-medium leading-relaxed break-words">메뉴</h1>
               <ul className="p-4 text-lg font-medium leading-relaxed break-words">
                 <li>
-                  <Link to="/">🏠 홈</Link>
+                  <Link to="/" onClick={toggleModal}>🏠 홈</Link>
                 </li>
               </ul>
               <ul className="absolute grid grid-cols-5 gap-4 text-center left-7 top-2/3">
