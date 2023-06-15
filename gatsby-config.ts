@@ -13,6 +13,14 @@ const config: GatsbyConfig = {
     'gatsby-plugin-postcss',
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 }
 
