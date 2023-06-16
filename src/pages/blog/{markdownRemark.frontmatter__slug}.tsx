@@ -1,5 +1,6 @@
 import * as React from "react"
 import { graphql, PageProps } from "gatsby"
+import Layout from "../../components/layout"
 
 interface Frontmatter {
   title: string
@@ -19,17 +20,27 @@ interface TemplateProps extends PageProps {
   data: Data
 }
 
+function formatDate(dateString: string): string {
+  const date = new Date(dateString);
+  
+  const year = date.getFullYear();
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  const day = date.getDate().toString().padStart(2, '0');
+  
+  return `${year}-${month}-${day}`;
+}
+
 export default function BlogPostTemplate({ data }: TemplateProps) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
-    <div>
+    <Layout>
       <div>
         <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+        <h2>{formatDate(frontmatter.date)}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-    </div>
+    </Layout>
   )
 }
 
